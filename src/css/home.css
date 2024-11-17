@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------------GENERAL STYLING--------------------*/
+
+:root{
+
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*--------------------WEB_STYLING-------------------------*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navitagion_list{
+    display: flex;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
