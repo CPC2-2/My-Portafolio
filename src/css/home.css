@@ -1,28 +1,32 @@
+/*-------------------- RESET --------------------*/
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-/*--------------------GENERAL STYLING--------------------*/
+/*-------------------- GENERAL STYLING --------------------*/
 
 :root {
     --font-main-color: black;
-    --font-second-main-color:#FFFFFF;
+    --font-secondary-color: #FFFFFF;
     --background-color: #FFFFFF;
     --text-color: #000000;
     --background-color-darkmode: #171717;
 }
 
-.darkmode {/*DEFAULT STYLING DARKMODE*/
+.darkmode {
+    /* Dark Mode Styling */
     --background-color: var(--background-color-darkmode);
-    --text-color: var(--font-second-main-color);
+    --text-color: var(--font-secondary-color);
     --font-main-color: #FFFFFF;
 }
 
-body{/*DEFAULT STYLING LIGTHMODE*/
-    background-color: var(--background-color, #FFFFFF);
+body {
+    background-color: var(--background-color);
     color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
 }
 
 ul {
@@ -31,14 +35,23 @@ ul {
 
 a {
     text-decoration: none;
-    color:var(--font-main-color);
+    color: var(--font-main-color);
+    transition: color 0.3s ease;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+a:hover {
+    opacity: 0.7;
 }
 
-/*--------------------WEB_STYLING-------------------------*/
+/*-------------------- LAYOUT STYLING --------------------*/
+
+main {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*-------------------- HEADER --------------------*/
 
 header {
     display: flex;
@@ -48,21 +61,82 @@ header {
     font-size: 15px;
 }
 
-.navitagion_list {
-    display: flex;
-    margin-right: 10px;
-}
-
-.navitagion_list li{
-    margin-right: 30px;
-}
-
 .navigation {
     display: flex;
     align-items: center;
 }
 
-#dark-mode-toggle{
-    border-radius: 1px solid black;
-    width: 20px;
+.navigation-list {
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
 }
+
+.navigation-list li a {
+    transition: opacity 0.3s ease;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*-------------------- MAIN SECTION --------------------*/
+
+#title-introduction-section{
+    font-size: 50px;
+}
+
+#subtitle{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#info{
+    font-weight: 400;
+    padding: 2px 0px 10px 0px;
+}
+
+#more-about-me{
+    margin-top: 20px;
+}
+
+/*--------------------PROFESIONAL EXPERIENCE ------------------*/
+
+#professional-experience{
+    margin-top: 50px;
+}
+
+/*-------------------- PROJECT-SECTIONS---------------------*/
+
+.show-projects-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#content {
+    font-weight: 500;
+}
+
+
+#info-date {
+    font-weight: 300;
+}
+
+.info-project {
+    padding: 10px;
+}
+
+#content-project {
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/*-------------------- RESPONSIVE DESIGN --------------------*/
