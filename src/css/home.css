@@ -48,7 +48,7 @@ a:hover {
 main {
     max-width: 70%;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 40px;
 }
 
 /*-------------------- HEADER --------------------*/
@@ -93,7 +93,7 @@ header {
 
 #subtitle{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 #info{
